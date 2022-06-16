@@ -8,7 +8,7 @@ function ContactForm({ onSubmit }) {
 
   const onFormSubmit = event => {
     event.preventDefault();
-    onSubmit(name, number);
+    onSubmit({ name, number });
     setName('');
     setNumber('');
   };
